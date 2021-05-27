@@ -1,0 +1,50 @@
+*{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Defult Body style*/
+body{
+    width: 100%;
+    max-width:1920px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #222;
+    margin: 0 auto;
+    font-family: Roboto;
+    line-height: 1.6;
+    font-weight: 400;
+    position: relative;
+}
+
+
+/*Topbar area style start*/
+.topbar{
+    height: 50px;
+    padding: 0 5px;
+    background-color: #7d7d7d;
+    display: flex;
+    justify-content: space-between;
+}
+.topbar .topbar__left{
+    display: flex;
+    align-items: center;
+}
+.topbar .topbar__right{
+    display: flex;
+    align-items: center;
+}
+.topbar .topbar__left .topbar__left--item,
+.topbar .topbar__right .topbar__right--item{
+    padding: 5px 10px;
+}
+.topbar .topbar__left .topbar__left--item a,
+.topbar .topbar__right .topbar__right--item a{
+    text-decoration: none;
+    color: #efefef;
+    font-size: 16px;
+}
+/*Topbar area style end*/

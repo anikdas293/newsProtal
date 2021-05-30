@@ -115,7 +115,7 @@ body{
 .logobar__search{
     position: relative;
 }
-.logobar__search .logobar__search--fill[type:'text']{ /* [type="text"] not mandatory*/
+.logobar__search .logobar__search--fill{ /* [type="text"] not mandatory*/
     border: 1px solid rgb(194, 194, 194);
     border-radius: 25px;
     background-color: #fff;

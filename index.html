@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News protal</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Topbar area-->
+    <!-- div.topbar>(div.topbar__left>div.topbar__left--item*4>a[href="#"])+div.topbar__right>div.topbar__right--item*2>a[href="#"] -->
     <div class="topbar">
         <div class="topbar__left">
             <div class="topbar__left--item"><a href="#">Home</a></div>
@@ -23,5 +24,22 @@
             <div class="topbar__right--item"><a href="#">Register</a></div>
         </div>
     </div>
+        
+	<div class="container">
+		
+		<!--Logobar and search area-->
+        <!-- div.logobar>(a.logobar__logo[href="index.html"]>h1.logobar__logo--text{news protal})+div.logobar__search>input.logobar__search--fill[type="text"][placeholder="search here..."]+span.material-icons.logobar__search--icon{search} -->
+		<div class="logobar">
+			<a href="#" class="logobar__logo">
+				<h1 class="logobar__logo--text">news protal</h1>
+			</a>
+			<div class="logobar__search">
+				<input type="text" class="logobar__search--fill" placeholder="search here...">
+				<i class="material-icons logobar__search--icon">search</i>
+			</div>
+		</div>
+		<!--End logobar area-->
+	</div>
+    
 </body>
 </html>

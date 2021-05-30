@@ -1,3 +1,17 @@
+/*Load Font*/
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap');
+
+
+
+/*Variable in css*/
+:root{
+         --primary-color: rgb(196, 69, 69);
+    --dark-primary-color: rgb(146, 34, 34);
+}
+/*End variable section*/
+
+
+
 *{
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -6,12 +20,30 @@
     padding: 0;
 }
 
-/*Defult Body style*/
+
+
+/*Defult HTML code and Scrollbar style*/
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--primary-color) transparent;
+}
+html::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+html::-webkit-scrollbar-thumb:hover{
+    background: var(--dark-primary-color);
+}
+
 body{
     width: 100%;
     max-width:1920px;
-    min-height: 100vh;
-    background-color: #f5f5f5;
+    min-height: 200vh;
+    background-color: #f9f9f9;
     color: #222;
     margin: 0 auto;
     font-family: Roboto;
@@ -19,15 +51,24 @@ body{
     font-weight: 400;
     position: relative;
 }
+/*End Defult HTML and Body code and Scrollbar style*/
+
+
+
+
+.container{ /* Realy so important to declar container*/
+    width:1240px;
+    margin: 0 auto;
+}
 
 
 /*Topbar area style start*/
 .topbar{
     height: 50px;
-    padding: 0 5px;
-    background-color: #7d7d7d;
+    background-color: rgb(125, 125, 125);
     display: flex;
     justify-content: space-between;
+    /*padding: 0 70px;*/
 }
 .topbar .topbar__left{
     display: flex;
@@ -48,3 +89,54 @@ body{
     font-size: 16px;
 }
 /*Topbar area style end*/
+
+
+
+/*Start Logobar and Search Section*/
+.logobar{
+    height: 150px;
+    background-color: #f3f3f3;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logobar .logobar__logo{
+    text-decoration: none;
+}
+.logobar .logobar__logo .logobar__logo--text{
+    color: #5a5a5a;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'Stardos Stencil', cursive;
+    font-weight: 700;
+}
+.logobar__search{
+    position: relative;
+}
+.logobar__search .logobar__search--fill[type:'text']{ /* [type="text"] not mandatory*/
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 25px;
+    background-color: #fff;
+    width: 380px;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 16px;
+}
+.logobar__search .logobar__search--fill:focus{
+    outline: none;
+}
+.logobar__search .logobar__search--fill::placeholder{
+    color: #b8b8b8;
+    font-size: 16px;
+}
+.logobar .logobar__search .logobar__search--icon{
+    font-size: 20px!important;
+    position: absolute;
+    top: 50%;
+    right:10px;
+    transform: translate(0, -50%);
+    color: #b8b8b8;
+}
+/*End logobar section*/

@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News protal</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
     <!--Topbar area-->
@@ -24,22 +25,33 @@
             <div class="topbar__right--item"><a href="#">Register</a></div>
         </div>
     </div>
-        
-	<div class="container">
-		
-		<!--Logobar and search area-->
-        <!-- div.logobar>(a.logobar__logo[href="index.html"]>h1.logobar__logo--text{news protal})+div.logobar__search>input.logobar__search--fill[type="text"][placeholder="search here..."]+span.material-icons.logobar__search--icon{search} -->
-		<div class="logobar">
-			<a href="#" class="logobar__logo">
-				<h1 class="logobar__logo--text">news protal</h1>
-			</a>
-			<div class="logobar__search">
-				<input type="text" class="logobar__search--fill" placeholder="search here...">
-				<i class="material-icons logobar__search--icon">search</i>
-			</div>
-		</div>
-		<!--End logobar area-->
-	</div>
     
+        <!--Logobar and search area-->
+        <!-- div.logobar>(a.logobar__logo[href="index.html"]>h1.logobar__logo--text{news protal})+div.logobar__search>input.logobar__search--fill[type="text"][placeholder="search here..."]+span.material-icons.logobar__search--icon{search} -->
+        
+    <div class="container">
+
+        <div class="logobar">
+            <a href="#" class="logobar__logo">
+                <h1 class="logobar__logo--text">news protal</h1>
+            </a>
+            <div class="logobar__search">
+                <input type="text" class="logobar__search--fill" placeholder="search here...">
+                <i class="material-icons logobar__search--icon">search</i>
+            </div>
+        </div>
+
+        <!--Menubar area-->
+        <!--div.menubar>div.menubar__items*5-->
+        <div class="menubar">
+            <div class="menubar__items menubar__items-active">Home</div>
+            <div class="menubar__items">Technology</div>
+            <div class="menubar__items">Business</div>
+            <div class="menubar__items">Education</div>
+            <div class="menubar__items">Politics</div>
+            <div class="menubar__items">Blog</div>
+        </div>
+       
+    </div>
 </body>
 </html>

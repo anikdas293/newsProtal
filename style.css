@@ -1,7 +1,4 @@
-/*Load Font*/
 @import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap');
-
-
 
 /*Variable in css*/
 :root{
@@ -11,7 +8,6 @@
 /*End variable section*/
 
 
-
 *{
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -19,7 +15,6 @@
     margin: 0;
     padding: 0;
 }
-
 
 
 /*Defult HTML code and Scrollbar style*/
@@ -55,8 +50,7 @@ body{
 
 
 
-
-.container{ /* Realy so important to declar container*/
+.container{
     width:1240px;
     margin: 0 auto;
 }
@@ -68,7 +62,7 @@ body{
     background-color: rgb(125, 125, 125);
     display: flex;
     justify-content: space-between;
-    /*padding: 0 70px;*/
+    padding: 0 70px;
 }
 .topbar .topbar__left{
     display: flex;
@@ -92,7 +86,7 @@ body{
 
 
 
-/*Start Logobar and Search Section*/
+/*Logobar and search area*/
 .logobar{
     height: 150px;
     background-color: #f3f3f3;
@@ -115,14 +109,13 @@ body{
 .logobar__search{
     position: relative;
 }
-.logobar__search .logobar__search--fill[type:'text']{ /* [type="text"] not mandatory*/
+.logobar__search .logobar__search--fill{
     border: 1px solid rgb(194, 194, 194);
-    border-radius: 25px;
+    border-radius: 30px;
     background-color: #fff;
-    width: 380px;
-    height: 60px;
+    width: 360px;
+    height: 54px;
     padding: 0 20px;
-    font-size: 16px;
 }
 .logobar__search .logobar__search--fill:focus{
     outline: none;
@@ -139,4 +132,32 @@ body{
     transform: translate(0, -50%);
     color: #b8b8b8;
 }
-/*End logobar section*/
+/*End logo and search area*/
+
+
+
+
+.menubar{
+    height: 80px;
+    display: flex;
+    align-items: stretch;
+    background-color: rgb(125,125,125, 0.5);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.menubar .menubar__items{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 80px;
+}
+.menubar .menubar__items:hover{
+    background-color: #FEB31A;
+}
+.menubar .menubar__items-active{
+    background-color: #FEB31A;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');

@@ -34,6 +34,8 @@ html::-webkit-scrollbar-thumb:hover{
     background: var(--dark-primary-color);
 }
 
+
+
 body{
     width: 100%;
     max-width:1920px;
@@ -53,6 +55,11 @@ body{
 .container{
     width:1240px;
     margin: 0 auto;
+}
+@media only screen and (min-width: 1200px) {
+    .container{
+        max-width: 1240px;
+    }
 }
 
 
@@ -136,7 +143,7 @@ body{
 
 
 
-
+/*Menubar area*/
 .menubar{
     height: 80px;
     display: flex;
@@ -158,6 +165,6 @@ body{
 .menubar .menubar__items-active{
     background-color: #FEB31A;
 }
+/*End Menubar*/
 
 
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');

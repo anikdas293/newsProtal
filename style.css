@@ -168,3 +168,65 @@ body{
 /*End Menubar*/
 
 
+
+
+
+/*pagination*/
+.page-link{
+    height:36px;
+    width:36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px; 
+}
+.page-nmstyle{
+    border-radius: 15px!important;
+    width: auto;
+    padding: 0 10px;
+}
+/*End pagination*/
+
+
+.finder{
+    display: flex;
+    margin: 15px 0;
+    font-size: 14px;
+    align-items: center;
+    padding: 5px 0;
+}
+.finder ol {
+    margin: 0;
+}
+
+/*Heading*/
+.area_heading{
+    font-weight: bold;
+    font-size: 24px;
+    color: #202020;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+
+/*Card syle*/
+.card{
+    border: 0;
+    background-color: transparent;
+}
+.card-body{
+    padding: 5px;
+}
+.card-title{
+    font-weight: 700;
+    font-size: 18px;
+    color: #202020;
+    margin-bottom: 5px;
+}
+.card-text{
+    color: #5a5a5a;
+    font-size: 14px;
+    line-height: 18px;
+}
+/*End card style*/

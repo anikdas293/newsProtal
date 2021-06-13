@@ -230,3 +230,27 @@ body{
     line-height: 18px;
 }
 /*End card style*/
+
+
+/*Start footer area*/
+.footer{
+    background-color: #cecece;
+}
+.footer-copyright{
+    background-color: #9b9b9b;
+}
+.footer .list-items{
+    list-style-type: none;
+    text-align: left;
+}
+.footer .footer-text{
+    text-align: left;
+    line-height: 18px;
+    color: rgb(100, 100, 100);
+}
+.footer .icons{
+    display: flex;
+    flex-direction: column;
+    
+}
+/*End footer area*/
